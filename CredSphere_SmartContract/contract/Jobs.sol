@@ -149,10 +149,6 @@ contract Jobs is AccessControl, Pausable, ReentrancyGuard {
         _unpause();
     }
 
-    // function setDaoAddress(address _daoAddress) external {
-    //     if (msg.sender != address(dao) && !hasRole(DEFAULT_ADMIN_ROLE, msg.sender)) revert NotAuthorized();
-    // }
-
     function supportsInterface(bytes4 interfaceId) public view override(AccessControl) returns (bool) {
         return super.supportsInterface(interfaceId);
     }
