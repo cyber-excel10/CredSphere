@@ -17,7 +17,7 @@ contract CREDToken is ERC20, ERC20Burnable, Votes, ERC20Permit, AccessControl, P
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
     bytes32 public constant REWARD_MANAGER_ROLE = keccak256("REWARD_MANAGER_ROLE");
 
-    /// @notice Token economics constants
+    // @notice Token economics constants
     uint256 public constant MAX_SUPPLY = 1_000_000_000 * 10**18;
     uint256 public constant INITIAL_SUPPLY = 100_000_000 * 10**18;
     uint256 public constant JOB_POSTING_FEE = 10 * 10**18;
